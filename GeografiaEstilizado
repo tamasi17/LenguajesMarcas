@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Preguntas de Geografía</title>
+
+</head>
+<body bgcolor="black" text="beige" style="font-family:'Arial'; margin: 50px;" >
+<h1 style="font-family:Helvetica, sans-serif">Preguntas de Geografía</h1>
+<ul type="disc" style="font-family:'Georgia'; margin: 20px;">
+    <li>La capital de Francia es París: <strong>Si</strong> </li>
+    <li>El río Amazonas está en África: <strong>No</strong> </li>
+</ul>
+<br>
+
+<h2>Formulario de Información</h2>
+<!--Esto es un comentario sobre el formulario-->
+<form style="font-family:'Courier'; margin: 40px;">
+<label for="nombre">Nombre:</label><br>
+<input type="text" id="nombre"><br><br>
+
+<label for="email">Email:</label><br>
+<input type="text" id="email"><br><br>
+
+<label for="fecha">Fecha de nacimiento:</label><br>
+<input type="date" id="fecha"><br><br>
+
+<label for="satisfaccion">Nivel de satisfaccion (0-10):</label><br>
+<input type="range" min="0" max="10" step="1" id="satisfaccion"><br><br>
+
+<input type="checkbox" id="terminos"><label for="terminos" style="color:rgb(129, 240, 129); font-family:'Verdana';"> Acepto los términos y condiciones.</label><br><br>
+
+<button type="submit" style="background-color:rgb(93, 148, 250); color: azure; font-family:'Verdana';"> Enviar </button>
+</form>
+
+</body>
+</html>
