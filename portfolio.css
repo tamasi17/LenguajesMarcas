@@ -1,47 +1,91 @@
 /* Portfolio.css */
+
 body {
     font-family: 'Roboto', sans-serif;
-    border-style: dotted;
-    padding: 0px;
-    border: 10px solid #1A5E6390;
-    color: #ffedc6;
-    background: #0f0a0a;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 20px;
-}
-
-header {
-    font-family: Playfair Display, serif;
-    text-align: center;
-    background-color: #1A5E6390;
-    padding: 0.5rem;
-    border-bottom-left-radius: 99%;
+    color: #5AA9E6;
+    background-color: #4b7fa7;
+    padding: 0;  
+    margin: 0;
     
 }
 
-section {
+header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* para que padding y border queden dentro de las dimensiones del header */
+    text-align: center;
+    color: #F9F9F9;
+    background-color: #5AA9E6;
+    box-shadow: 0 0 5px #5AA9E6;
+    
+}
 
+.organizador {
+    display: flex; /* class para aplicar en un div y separar en flexboxes */
+    justify-content: space-between; /* Con espacio entre elementos, tambien está space-around */
+    align-items: flex-start; /* alinea verticalmente en la parte superior */
+    gap: 10px; /* espacio entre secciones */
+    padding: 20px;
+}
+
+.izq, .der {
+    flex: 1; /* para que cada seccion ocupe la misma cantidad, en este momento, es una relacion 1:1 */
+
+}
+
+
+section {
+    
     display: flex;  /* Para separar en flexboxes, tambien block o inline */
     margin-bottom: 20px;
     flex-direction: column; /* Apila los elementos verticalmente */
     justify-content: space-between; /* Con espacio entre elementos, tambien está space-around */
-    align-items: center; /* Centrar elementos verticalmente, tambien está stretch */
-    text-align: justify;
+    text-align: center;
+    color: #F9F9F9;
     padding: 20px;
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 20px; /* Para separar sections entre ellas */
-    border: 2px solid #39FFD1; /* Solid si no, no se ve */
-    border-color: #39FFD1;
+    border: 2px solid #06d6a0; /* Solid si no, no se ve */
+    border-color: #06d6a0;
     border-radius: 20%;
-    background-color: #1A5E6390;
-    box-shadow: 0 0 15px rgba(8, 171, 177, 0.6); /* Para glow */
+    background-color: #06d6a0;
+    box-shadow: 0 0 10px #06d6a0; /* Para glow */
 }
 
 h1, h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #F9F9F9;
     text-shadow: 0 0 12px rgba(255, 255, 255, 1); /* Glow texto */
     margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out; /*  cambia color referido al hover, tarda 0.3s en hacer efecto */
 }
+
+h1:hover {
+    color: #FFE45E; /* cambia a blanco con el hover */
+}
+
+.aboutMe {
+    max-width: 80%;
+    background-color: #5AA9E6;
+    color: #F9F9F9;
+    border-radius: 15px;
+    border-color: #7FC8F8;
+    box-shadow: 0 0 20px #7FC8F8;
+
+}
+
+.aboutMe:hover {
+    box-shadow: 0 0 30px #7FC8F8;
+}
+
+.mainText {
+    flex: 1; /* para orgranizar flexboxes */
+}
+
 
 ul {
     list-style: none;
@@ -54,17 +98,51 @@ ul li {
 }
 
 a {
-    color: #39FFD1;
+    color: #FFE45E;
+    text-decoration: none; /* links sin subrayado */
+    transition: color 0.3s ease-in-out; /*  cambia color referido al hover, tarda 0.3s en hacer efecto */
 
 }
 
-.highlighted {
-    color: #FF9FB2;
+a:hover {
+    color: #F9F9F9; /* cambia a blanco con el hover */
+    text-shadow: 0 0 5px #fcdbe5bb;
+}
+
+.skills {
+    flex: 1;
+    border: 0;
+    background-color: #ff6392bb;
+    box-shadow: 0 0 10px #ff6392bb; 
+    color: #F9F9F9;
+}
+
+#placeTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #4a4040;
+    text-shadow: 0 0 1px #393232; /* Glow texto */
+    margin-bottom: 1rem;
+}
+
+.places {
+    flex: 1;
+    border: 0;
+    background-color: #FFE45E;
+    box-shadow: 0 0 10px #FFE45E;
+    color: #393232;
 }
 
 footer {
+    display: flex;
     text-align: center;
     padding: 1rem 0;
-    color: #39FFD1;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    color: #7FC8F8;
+    text-shadow: 0 0 4px #5AA9E6;
     background: #0f0a0a;
+    
+    
 }
