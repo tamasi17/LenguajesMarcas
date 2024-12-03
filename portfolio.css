@@ -1,0 +1,70 @@
+/* Portfolio.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    border-style: dotted;
+    padding: 0px;
+    border: 10px solid #1A5E6390;
+    color: #ffedc6;
+    background: #0f0a0a;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+
+header {
+    font-family: Playfair Display, serif;
+    text-align: center;
+    background-color: #1A5E6390;
+    padding: 0.5rem;
+    border-bottom-left-radius: 99%;
+    
+}
+
+section {
+
+    display: flex;  /* Para separar en flexboxes, tambien block o inline */
+    margin-bottom: 20px;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: space-between; /* Con espacio entre elementos, tambien está space-around */
+    align-items: center; /* Centrar elementos verticalmente, tambien está stretch */
+    text-align: justify;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px; /* Para separar sections entre ellas */
+    border: 2px solid #39FFD1; /* Solid si no, no se ve */
+    border-color: #39FFD1;
+    border-radius: 20%;
+    background-color: #1A5E6390;
+    box-shadow: 0 0 15px rgba(8, 171, 177, 0.6); /* Para glow */
+}
+
+h1, h2 {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 1); /* Glow texto */
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    
+}
+
+a {
+    color: #39FFD1;
+
+}
+
+.highlighted {
+    color: #FF9FB2;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #39FFD1;
+    background: #0f0a0a;
+}
