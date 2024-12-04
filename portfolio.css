@@ -9,6 +9,12 @@ body {
     
 }
 
+body.dark-theme {
+    background-color: #1E1E1E;
+    color: #F9F9F9;
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
@@ -133,6 +139,32 @@ a:hover {
     color: #393232;
 }
 
+button {
+    background-color: #5AA9E6;
+    color: #F9F9F9;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #FFE45E;
+}
+
+/* Botón modo oscuro */
+body.dark-theme button {
+    background-color: #393232;
+    color: #FFE45E;
+}
+
+body.dark-theme button:hover {
+    background-color: #5A5A5A;
+}
+
 footer {
     display: flex;
     text-align: center;
@@ -142,7 +174,14 @@ footer {
     gap: 60px;
     color: #7FC8F8;
     text-shadow: 0 0 4px #5AA9E6;
-    background: #0f0a0a;
-    
-    
+    background: #4a4040;
+    transition: color 0.5s ease-in-out; /*  referido al hover, tarda 0.5s en hacer efecto */
+
+     
+}
+
+footer:hover {
+    background: #393232;
+    box-shadow: 0 0 15px #F9F9F9;
+    text-shadow: 0 0 5px #5AA9E6;
 }
